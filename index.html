@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snehith - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+.boxsne {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupsne {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+.popupsne .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popupsne .close:hover {
+  color: #06D85F;
+}
+.popupsne .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+    
+    </style>
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Snehith Namgiri</h1>
+
+          <p class="title">Electronics and Communication Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:namgirisnehith13@gmail.com" class="contact-link">namgirisnehith13@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91-8520064109" class="contact-link">+91-8520064109</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Date of Birth</p>
+
+              <time datetime="1982-06-23">March 13, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Vijayawada,Andhra Pradesh-India</address>
+            </div>
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img style="width: 15px;height: 15px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png"></img>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="http://www.linkedin.com/in/snehith-namgiri" class="contact-link">http://www.linkedin.com/in/snehith-namgiri</a>
+
+            </div>
+
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Workspace</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            
+            Passionate about Electonics
+and Intrested to Build ,Develop Projects, can be evolved & flexible into any kind of domain which includes Electronics. Apart from Development I am intrested in Research of my domain and explore wide range of possibilities to improve my knowledge on Electronics.
+          </p>
+
+          
+        </section>
+        <!--
+          Education section
+        -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">KL University</h4>
+
+              <span>2020 — 2024</span>
+
+              <p class="timeline-text">
+                Electronics and Communication Engineering with Speacialisation in VLSI
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Narayana Junior College</h4>
+
+              <span>2018 — 2020</span>
+
+              
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nirmala High School</h4>
+
+              <span>2002 — 2004</span>
+
+              
+            </li>
+
+          </ol>
+
+        </section>
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <img style="width:18px ;height:18px" src="https://cdn-icons-png.flaticon.com/512/6587/6587008.png"></img>
+            </div>
+
+            <h3 class="h3">Resume</h3>
+          </div>
+
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">White mode</h4>
+
+              <span><a style="color:#FCCD68 ;" href="https://drive.google.com/file/d/1Qp9_UPKYd4RzKApMukhWYwy7kSHNAIhM/view?usp=drivesdk">Download</a></span>
+
+              
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        
+
+
+        <!--
+          - service
+        -->
+
+        <!-- <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        
+
+
+        
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+
+      <article class="research" data-page="research">
+
+
+        <header>
+          <h2 class="h2 article-title">Research Work</h2>
+        </header>
+        
+
+        <section class="about-text">
+          <p>
+            
+            Passionate about Electronics and Interested to build The projects has  Advanced  me to walk into Research work by proposing solutions to sole some real word problems.
+          </p>
+
+          
+        </section>
+        <!--
+          Education section
+        -->
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Real-Time Transfer of Data from Ring Laser
+              Gyro Using Bluetooth</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IEEE Internet Of Things(IEEE TRANSACTION INDEXTED JOURNAL)</h4>
+
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Communicated on 01-NOV-2022 </h4>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a  style="color:#FCCD68 ;" href="#">ABSTRACT</a></h4>
+
+            </li>
+            <li >
+
+              <h4 class="h4 timeline-item-title">  One of the essential words in the vocabulary of navigational systems is the gyro. The most common type of gyroscope used in spacecraft and missiles is the ring laser gyroscope. It is impossible to open the gyros while they are part of the inertial navigation system (INS) and assess their operational state. Only over a wire link may the bare minimum of data be provided up to the missile system launch. It will be advantageous if there is a wireless communication system between the gyro and the outside world (computer) so that the entire data of the gyro can be monitored up until the very last second without affecting the gyro's performance. Effective communication can also be established between the gyros, improving the INS' performance through better information flow. Therefore, it is indicated in the proposed work that the research of ring laser gyro devices, how the gyro output is set up in contemporary FPGA boards, and the wireless transmission of values over Bluetooth technology. The ring laser gyroscope (RLG) and the gyro output are set in the FPGA for Bluetooth connection (i.e., wireless communication) to transport data from RLG to PC. </h4>
+            </li>
+
+          </ol>
+
+        </section>
+          
+      </section>
+      <!--
+        Education section
+      -->
+      <section class="timeline">
+
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+
+          <h3 class="h3">Artificial Intelligence and connected Smart Elevator
+            Systems enables Smart Buildings</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title">Expert Systems(WEB OF SCIENCE INDEXED JOURNAL)
+            </h4>
+
+            
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title"> Communicated on 11-NOV-2022 </h4>
+
+           
+            
+
+          </li>
+
+          <li class="timeline-item">
+
+            <h4 class="h4 timeline-item-title"><a  style="color:#FCCD68 ;" href="#">ABSTRACT</a></h4>
+
+           
+
+            
+          </li>
+          <li >
+
+            <h4 class="h4 timeline-item-title">   Nowadays, elevator service remains as most frequently reported problem by building tenants, followed only by heating, aeration, and air conditioning. It has been widely recognized that improving elevator efficiency is crucial. However, the concern is the power issue, which is extremely important in any construction, especially in high-rise buildings. The ordinary lift system will halt on every floor even if no one is waiting for the lift, but this smart elevator system is something different from that. It means that if a person intends to move from the ground to the fifth floor level of a ten-story building, they may press all the number buttons inside the lift that corresponds to the various floors. As a result, life will stand at a standstill at every base, even if it is not required. This work gives a new approach to smart elevator systems using Artificial Intelligence. This system uses image processing which makes the lift halt at desired floor. </h4>
+          </li>
+        </ol>
+
+      </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            
+
+            <li class="filter-item">
+              <button data-filter-btn>intern</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>projects</button>
+            </li>
+
+            
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              
+
+              <li class="select-item">
+                <button data-select-item>intern</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>projects</button>
+              </li>
+
+              
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+
+          
+
+          <!--card start-->
+          <li class="testimonials-item project-item active" data-filter-item data-category="projects">
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              
+                <figure class="project-img">
+                
+                <img  src="./assets/images/intern1imag.jpg" >
+                </figure>
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>
+                Hand gesture-controlled robot car
+              </h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  In this project, we introduce a hand-gesture-based control interface for navigating a car robot. A 3-axis accelerometer is adapted to record a user’s hand trajectory.
+The trajectory data is transmitted wirelessly via an RF module to a computer. The received trajectories are then classified into one of six control commands for navigating a car robot. The classifier adopts the dynamic time warping (DTW) algorithm to classify hand trajectories. Simulation results show that the classifier could achieve a 92.2% correct rate.
+
+                  <br/>
+                  <img style="height:250px; width: 150px;" src="./assets/images/rb2.jpg" >
+<img style="height:200px; width: 400px;" src="./assets/images/rb3.jpg" >
+<br/>
+
+                </p>
+              </div>
+
+            </div>
+          </li>
+          <!--
+            - card  inside data 
+          -->
+          
+          <!---card end-->
+
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+      <img  src="./assets/images/spider 2.jpg" >
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      Hexapod
+      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        In this project, I have created a Legged hexapod robot which is a programmable robot with six legs attached to the robot body. The legs are controlled with a degree of autonomy so that the robot can move within its environment, to perform intended tasks.
+        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/spider 1.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+        <img src="./assets/images/smartmirror.jpg" alt="Design conferences in 2022" loading="lazy">
+      </figure>
+    </figure>
+    <h4 class="h4 title" data-testimonials-title>
+      Smart Mirror
+    </h4>
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        Built a smart mirror with Raspberry Pi and integrated modules like Spotify Music Sync, News Headline bar, Push notifications, and users Personal calendar assignments deadline widget for important notifications.
+        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/sm.jpg" >
+        <br/>
+      </p>
+    </div>
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+
+
+
+          <!--card start-->
+          <li class="testimonials-item project-item active" data-filter-item data-category="projects">
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              
+                <figure class="project-img">
+                
+                <img  src="./assets/images/intern1imag.jpg" >
+                </figure>
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>
+                CARDIO BELT
+              </h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  In this project, I created a cardio alerting belt to stop people from driving without a seatbelt. The idea for this project came from the fact that people are not wearing seatbelts and driving. There are many alerting methods, but this is the simplest and most effective. As the car seat belt passes through the chest cavity, I ebbed the ECG electrodes in the seat belt. Only the seat belt alerting system will be turned off when the ECG electrodes record heart signals. The second stage of improvement is that we can detect the driver's cardiac arrests.
+                  <br/>
+                  <img style="height:250px; width: 150px;" src="./assets/images/spider 1.jpg" >
+
+                  <br/>
+
+                </p>
+              </div>
+
+            </div>
+          </li>
+          <!--
+            - card  inside data 
+          -->
+          
+          <!---card end-->
+
+
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+      <img  src="./assets/images/FLIGHT 1.jpg" >
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      BARCON FLIGHT 
+      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        This is a personal project which I created when I am studying  intermediate to know basic knowledge of drones and flight controllers, for this I created a barcon flight body with a form board and used a flysky controller to control the flight and it was a successful one where my passion towards it  has increased a lot and I learn more about aerodynamics.        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/FLIGHT 2.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+      <img  src="./assets/images/BIOAMP.jpg" >
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      EXG BIO AMPLIFIER
+      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        In this peoject I have created BioAmp EXG  which is capable of recording publication-quality biopotential signals like ECG, EMG, EOG, and EEG, without the inclusion of any dedicated hardware or software filters and its powerful noise rejection makes it usable even when the device is close to the AC mains supply.         <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/spider 1.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+      <img  src="./assets/images/DRONE 1.jpg" >
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      DRONE
+      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        This project is all about the Quadcopter.In this project, I've created a network-controlled drone that can be controlled through the Internet without any use of any RF technology.Here, I've used NodeMCU as the flight controller and the IP which is obtained when the NodeMCU is connected to the Internet is used as a medium for the transmission of data from the transmitter to the controller. This drone is configured with PID constants as well, to ensure the better stability of the drone.Here, we need to tune the PID constants while testing for the reduction of errors instability.
+        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/DRONE 2.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+      <img  src="./assets/images/HA1.jpg" >
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      HOME AUTOMATION 
+      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        In this project, I have created a hOME AUTOMATION with  
+        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/spider 1.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+      <img  src="./assets/images/TENG1.jpg" >
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      TRIBO ELECTRIC NANO GENARATOR POWER TRANSMIISION
+      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        In this project, I have created a TENG 
+        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/spider 1.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+<!--card start-->
+<li class="testimonials-item project-item active" data-filter-item data-category="projects">
+  <div class="content-card" data-testimonials-item>
+
+    <figure >
+      
+      <img data-testimonials-avatar>
+    
+      <figure class="project-img">
+      
+        <img src="./assets/images/zeb.png" alt="Design conferences in 2022" loading="lazy">
+      </figure>
+    </figure>
+
+    <h4 class="h4 title" data-testimonials-title>
+      Zebotronics      
+      </h4>
+
+    <div class="testimonials-text" data-testimonials-text>
+      <p>
+        In this project, I have created a TENG 
+        <br/>
+        <img style="height:250px; width: 150px;" src="./assets/images/spider 1.jpg" >
+
+<br/>
+
+      </p>
+    </div>
+
+  </div>
+</li>
+<!--
+  - card  inside data 
+-->
+
+<!---card end-->
+
+
+          <!--card start-->
+          <li class="testimonials-item project-item active" data-filter-item data-category="intern">
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              </figure>
+              <figure class="project-img" width="90">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/zeb.png" alt="Design conferences in 2022" loading="lazy">
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>Zebotronics</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Served as Electronics Content creator intern for two months.
+
+                  
+                </p>
+                <img style="height:200px; width: 400px;" src="./assets/images/zeboimg1.jpg" >
+
+              </div>
+
+            </div>
+          </li>
+          <!--
+            - card  inside data 
+          -->
+          <div class="modal-container" data-modal-container>
+  
+            <div class="overlay" data-overlay></div>
+  
+            <section class="testimonials-modal">
+  
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+  
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img data-modal-img>
+                  </figure>
+                  
+                    
+                </div>
+  
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>Zebotronics</h4>
+                  <div data-modal-text>
+                    <p>
+                      “Electronics content creator intern” 
+                      My internship includes training/orientation and focus primarily on learning and developing new
+                      skills and gaining a deeper understanding of concepts through hands-on application of the
+                      knowledge you learned in class.
+                      Tools i have worked: Easyeda, Proteus, PCB Wizard,NI Multisim.
+                    </p>
+                  </div>
+                </div>
+            </section>
+          </div>
+          <!---card end-->
+
+
+          <!--card start-->
+          <li class="testimonials-item project-item active" data-filter-item data-category="intern">
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              </figure>
+              <figure class="project-img" width="60">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/grp1.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>Internship at DG(MSS)-Defence Research and Development Organisation</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Done Internship at DG(MSS)-Defence Research and Development Organisation for a period of one month and developed "Design and Development of QPSK Modulator and Designing of microprocessor" under the guidance of M.Satyanarayana (Scientist F Director General) 
+                </p>
+                <img style="height: 250px ;width: 400px;"src="./assets/images/1grp2.jpg">
+
+              </div>
+
+            </div>
+          </li>
+          <!--
+            - card  inside data 
+          -->
+          <div class="modal-container" data-modal-container>
+  
+            <div class="overlay" data-overlay></div>
+  
+            <section class="testimonials-modal">
+  
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+  
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img data-modal-img>
+                  </figure>
+                  <figure class="blog-banner-box" width="50">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/intern1imag.jpg" alt="Design conferences in 2022" loading="lazy">
+                  </figure>
+                </div>
+  
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>DRDO</h4>
+                  <div data-modal-text>
+                    <p>
+                      drdo dororod jdff  odfodfkfo s fosk;s f f;osm  f;lsd ff  kdm;mjsg  gjdmglojgo  dj;ofo jod o kjosd fvsdmggg dg gvdgbgdg g gdgdg g
+                    </p>
+                    <img style="height: 250px ;width: 400px;"src="./assets/images/">
+
+                  </div>
+                </div>
+            </section>
+          </div>
+          <!---card end-->
+          <!--card start-->
+          <li class="testimonials-item project-item active" data-filter-item data-category="intern">
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              </figure>
+              <figure class="project-img" width="60">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/aadhya.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>Aadhyaa Skills</h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  Done intership at Aadhyaa Skills on Machine learning using vision and sensor interfacing with NI Hardware using NI LabVIEW. In this i have worked on  Vision Development Models, Deep Learning Models in labview environment while copnnecting them to ni hardware.
+                  Tools :  NI myDAQ, NI ELVIS ,labview , DAQExpress
+                  
+                </p>
+              </div>
+
+            </div>
+          </li>
+          <!--
+            - card  inside data 
+          -->
+          <div class="modal-container" data-modal-container>
+  
+            <div class="overlay" data-overlay></div>
+  
+            <section class="testimonials-modal">
+  
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+  
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img data-modal-img>
+                  </figure>
+                  
+                    
+                    <img src="./assets/images/aadhya.jpg" >
+                  
+                </div>
+  
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>DRDO</h4>
+                  <div data-modal-text>
+                    <p>
+                      drdo dororod jdff  odfodfkfo s fosk;s f f;osm  f;lsd ff  kdm;mjsg  gjdmglojgo  dj;ofo jod o kjosd fvsdmggg dg gvdgbgdg g gdgdg g
+                    </p>
+                  </div>
+                </div>
+            </section>
+          </div>
+          <!---card end-->
+          <!--card start-->
+          <li class="testimonials-item project-item active" data-filter-item data-category="projects">
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              </figure>
+              <figure class="project-img" width="90">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="./assets/images/me.jpg" alt="Design conferences in 2022" loading="lazy">
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>Founder of Scienshith
+              </h4>
+
+              <div class="testimonials-text" data-testimonials-text>
+                <p>
+                  An Organisation which helps to understand students the science behind it and its working methodology in a practical manner and its name depicts my name (Snehith + Science)
+                  
+                </p>
+                <img style="height: 250px ;width: 400px;"src="./assets/images/sci1.jpg">
+                <br/>
+                <img style="height: 250px ;width: 200px;"src="./assets/images/sci2.jpg">
+              </div>
+
+            </div>
+          </li>
+          <!--
+            - card  inside data 
+          -->
+          <div class="modal-container" data-modal-container>
+  
+            <div class="overlay" data-overlay></div>
+  
+            <section class="testimonials-modal">
+  
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+  
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img data-modal-img>
+                  </figure>
+                  
+                    
+                </div>
+  
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>abc</h4>
+                  <div data-modal-text>
+                    <p>
+                      “Electronics content creator intern” 
+                      My internship includes training/orientation and focus primarily on learning and developing new
+                      skills and gaining a deeper understanding of concepts through hands-on application of the
+                      knowledge you learned in class.
+                      Tools i have worked: Easyeda, Proteus, PCB Wizard,NI Multisim.
+                    </p>
+
+                  </div>
+                </div>
+            </section>
+          </div>
+          <!---card end-->
+
+                
+
+
+
+              
+            
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+   
+      
+      
+      
+
+    
+
+      <article class="workspace" data-page="workspace">
+
+
+        <header>
+          <h2 class="h2 article-title">Workspace</h2>
+        </header>
+
+        <!--card start1-->
+        
+          <div class="content-card2" data-testimonials-item>
+            <figure>
+
+                     <!--card start-->
+            <div class="content-card" data-testimonials-item>
+
+              <figure >
+                
+                <img data-testimonials-avatar>
+              
+                <figure class="project-img">
+                
+                <img style="width: 50rem;margin:0 5rem 0 0" src="./assets/images/lab.jpeg" >
+                </figure>
+              </figure>
+
+              <h4 class="h4 title" data-testimonials-title>
+                Working Area
+              </h4>
+
+              
+
+            </div>
+          
+          <!--
+            - card  inside data 
+          -->
+          
+          <!---card end-->
+              
+            </figure>
+          </div>
+          
+        
+        
+          
+        </div>
+        <!---card end-->
+
+
+
+
+
+
+
+
+        
+
+        
+      </article>
+  
+  
+          
+  
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <!-- <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27658.77084268448!2d80.65609343139208!3d16.520908152371778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e54dd959ee05%3A0xc2518559c210e54!2s31-3-4%2C%20Venkatramaiah%20Veedhi%2C%20Machavaram%2C%20Vijayawada%2C%20Andhra%20Pradesh%20520004!5e0!3m2!1sen!2sin!4v1660893722552!5m2!1sen!2sin">
+              </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article> -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+    
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+    </script>
+
+</body>
+
+</html>
